@@ -38,8 +38,15 @@ class UrlHighlighter(sublime_plugin.EventListener):
 
     def on_close(self, view):
         for map in [self.urls_for_view, self.scopes_for_view, self.ignored_views]:
-            if view.id() in map:
-                del map[view.id()]
+            view_id = view.id()
+
+            if view_id in map:
+
+                if isinstance(map, dict):
+                    del map[view_id]
+
+                else:
+                    map.remove(view_id)
 
     """The logic entry point. Find all URLs in view, store and highlight them"""
     def update_url_highlights(self, view):
