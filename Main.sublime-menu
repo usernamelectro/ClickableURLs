@@ -25,6 +25,7 @@
                                 "args": {"file": "${packages}/User/ClickableUrls.sublime-settings"},
                                 "caption": "Settings – User"
                             },
+                            { "caption": "-" },
                             {
                                 "command": "open_file",
                                 "args": {
@@ -73,6 +74,7 @@
                                 },
                                 "caption": "Key Bindings – User"
                             },
+                            { "caption": "-" },
                             {
                                 "command": "open_file",
                                 "args": {
