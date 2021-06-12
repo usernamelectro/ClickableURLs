@@ -1,0 +1,4 @@
+[
+    { "keys": ["ctrl+alt+u"], "command": "open_url_under_cursor" },
+    { "keys": ["ctrl+alt+shift+u"], "command": "open_all_urls" }
+]
