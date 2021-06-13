@@ -1,4 +1,3 @@
-{
-    // Change max url limit, default is 214
-    "max_url_limit": 214
+{    
+    "max_url_limit": 200
 }
