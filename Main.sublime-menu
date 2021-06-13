@@ -25,10 +25,7 @@
 	                            },
 	                            "caption": "Settings"
 	                        },
-
-	                        // Separator
-                            { "caption": "-" },
-
+                 
                             // Key Bindings
                             {
                             	"command": "edit_settings", "args":
@@ -39,9 +36,6 @@
                             	"caption": "Key Bindings"
                             },
 
-                            // Separator
-                            { "caption": "-" },
-
                             // Mouse map
                             {
                                 "command": "open_file",
@@ -49,10 +43,7 @@
                                     "file": "${packages}/User/Default.sublime-mousemap"
                                 },
                                 "caption": "Mouse Bindings"
-                            },
-
-                            // Separator
-                            { "caption": "-" }
+                            }
                         ]
                     }
                 ]
