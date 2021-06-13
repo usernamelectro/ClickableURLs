@@ -15,73 +15,43 @@
                         "caption": "Clickable URLs",
                         "children":
                         [
+
+                            // Settings
                             {
-                                "command": "open_file",
-                                "args": {"file": "${packages}/ClickableURLs/ClickableUrls.sublime-settings"},
-                                "caption": "Settings – Default"
-                            },
-                            {
-                                "command": "open_file",
-                                "args": {"file": "${packages}/User/ClickableUrls.sublime-settings"},
-                                "caption": "Settings – User"
-                            },
+	                            "command": "edit_settings", "args":
+	                            {
+	                                "base_file": "${packages}/ClickableURLs/ClickableUrls.sublime-settings",
+	                                "default": "${packages}"
+	                            },
+	                            "caption": "Settings"
+	                        },
+
+	                        // Separator
                             { "caption": "-" },
+
+                            // Key Bindings
                             {
-                                "command": "open_file",
-                                "args": {
-                                    "file": "${packages}/Clickable URLs/Default (OSX).sublime-keymap",
-                                    "platform": "OSX"
-                                },
-                                "caption": "Key Bindings – Default"
+                            	"command": "edit_settings", "args":
+                            	{
+                            		"base_file": "${packages}/ClickableURLs/Default ($platform).sublime-keymap",
+                            		"default": "${packages}"
+                            	},
+                            	"caption": "Key Bindings"
                             },
-                            {
-                                "command": "open_file",
-                                "args": {
-                                    "file": "${packages}/Clickable URLs/Default (Linux).sublime-keymap",
-                                    "platform": "Linux"
-                                },
-                                "caption": "Key Bindings – Default"
-                            },
-                            {
-                                "command": "open_file",
-                                "args": {
-                                    "file": "${packages}/Clickable URLs/Default (Windows).sublime-keymap",
-                                    "platform": "Windows"
-                                },
-                                "caption": "Key Bindings – Default"
-                            },
-                            {
-                                "command": "open_file",
-                                "args": {
-                                    "file": "${packages}/User/Default (OSX).sublime-keymap",
-                                    "platform": "OSX"
-                                },
-                                "caption": "Key Bindings – User"
-                            },
-                            {
-                                "command": "open_file",
-                                "args": {
-                                    "file": "${packages}/User/Default (Linux).sublime-keymap",
-                                    "platform": "Linux"
-                                },
-                                "caption": "Key Bindings – User"
-                            },
-                            {
-                                "command": "open_file",
-                                "args": {
-                                    "file": "${packages}/User/Default (Windows).sublime-keymap",
-                                    "platform": "Windows"
-                                },
-                                "caption": "Key Bindings – User"
-                            },
+
+                            // Separator
                             { "caption": "-" },
+
+                            // Mouse map
                             {
                                 "command": "open_file",
                                 "args": {
                                     "file": "${packages}/User/Default.sublime-mousemap"
                                 },
-                                "caption": "Mouse Bindings - User"
+                                "caption": "Mouse Bindings"
                             },
+
+                            // Separator
                             { "caption": "-" }
                         ]
                     }
